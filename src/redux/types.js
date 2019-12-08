@@ -1,0 +1,5 @@
+export const ADD_BUDGET = "ADD_BUDGET";
+export const NAME_EXPENSE = "NAME_EXPENSE";
+export const ADD_EXPENSE_AMOUNT = "ADD_EXPENSE_AMOUNT";
+export const ADD_EXPENSE = "ADD_EXPENSE";
+export const REMOVE_EXPENSE = "REMOVE_EXPENSE";
