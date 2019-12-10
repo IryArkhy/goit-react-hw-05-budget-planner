@@ -1,10 +1,10 @@
-import { combineReducers } from "redux";
-import * as types from "./types";
+import { combineReducers } from 'redux';
+import * as types from './types';
 
 const budgetReducer = (state = 0, action) => {
   switch (action.type) {
     case types.ADD_BUDGET:
-      return state + action.payload.amount;
+      return action.payload.amount;
     default:
       return state;
   }
@@ -23,5 +23,5 @@ const expensesReducer = (state = [], { type, payload }) => {
 
 export default combineReducers({
   expenses: expensesReducer,
-  budget: budgetReducer
+  budget: budgetReducer,
 });
